@@ -15,7 +15,7 @@
   <body>
     <!-- start navigation -->
     <div class="navigation" id="navigation">
-      <div class="logo"></div>
+      <div class="logo" id="logo" onclick="redirectToHome()"></div>
       <div class="navbar" id="navbar">
         <h5>
           <a href="#Hero" id="BCR">BCR</a>
@@ -52,8 +52,8 @@
           terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
           untuk sewa mobil selama 24 jam.
         </p>
-        <button id="btn-sewa" class="btn">
-          <a href="/cars">Mulai Sewa Mobil</a>
+        <button id="btn-sewa" class="btn" onclick="redirectToCars()">
+          Mulai Sewa Mobil
         </button>
       </div>
       <div class="section2">
@@ -288,7 +288,9 @@
         <br />
         tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <button id="btn-sewa" class="btn">Mulai Sewa Mobil</button>
+      <button id="btn-sewa" class="btn" onclick="redirectToCars()">
+        Mulai Sewa Mobil
+      </button>
     </div>
     <!-- End Banner Section -->
 
@@ -503,7 +505,7 @@
       </div>
       <div class="copyright">
         <p>Copyright Binar 2022</p>
-        <div class="logo"></div>
+        <div class="logo" id="logo" onclick="redirectToHome()"></div>
       </div>
     </div>
     <!-- end footer section -->

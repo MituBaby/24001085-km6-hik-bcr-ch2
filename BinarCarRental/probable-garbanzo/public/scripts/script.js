@@ -93,6 +93,12 @@ function showSlides(n) {
 }
 // end testi
 
-// start date
+// start
+function redirectToHome() {
+  window.location.href = "/";
+}
 
-// end date
+function redirectToCars() {
+  window.location.href = "/cars";
+}
+// end

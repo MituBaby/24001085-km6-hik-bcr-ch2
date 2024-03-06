@@ -11,6 +11,7 @@
   width: 100px;
   height: 34px;
   background-color: #0d28a6;
+  cursor: pointer;
 }
 
 .navbar {
@@ -275,7 +276,6 @@ q {
   gap: 50px;
   margin-top: 100px;
   width: 80%;
-  border: 1px solid black;
 }
 
 .naf {
@@ -283,7 +283,6 @@ q {
 }
 
 .search {
-  /* border: 1px solid black; */
   position: absolute;
   z-index: 10;
   width: 70%;
