@@ -293,6 +293,15 @@ q {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
+#cars-container {
+  width: 70%;
+  margin: 0 0 0 15%;
+}
+
+.detail {
+  display: flex;
+}
+
 @media (max-width: 884px) {
   .navigation {
     padding-left: 10px;
