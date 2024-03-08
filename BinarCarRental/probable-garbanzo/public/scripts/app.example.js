@@ -18,7 +18,6 @@ class App {
       const node = document.createElement("div");
       node.classList.add("col-md-4");
       node.innerHTML = car.render();
-      // const node = car.render();
       this.carContainerElement.appendChild(node);
     });
   };

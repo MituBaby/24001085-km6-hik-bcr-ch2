@@ -53,7 +53,7 @@ class Car {
                 this.description
               } <br> <br> Specs: <br> ${this.specs} <br><br>Options: <br> ${
       this.options
-    }</p>
+    }<br> <br>Available at : ${this.availableAt}</p>
               <div class="detail">
                 <span>
                   <img src="./images/fi_users.png" alt="" />
@@ -78,15 +78,4 @@ class Car {
           </div>
     `;
   }
-
-  // render() {
-  //   return `
-  //     <p>id: <b>${this.id}</b></p>
-  //     <p>plate: <b>${this.plate}</b></p>
-  //     <p>manufacture: <b>${this.manufacture}</b></p>
-  //     <p>model: <b>${this.model}</b></p>
-  //     <p>available at: <b>${this.availableAt}</b></p>
-  //     <img src="${this.image}" alt="${this.manufacture}" width="64px">
-  //   `;
-  // }
 }
