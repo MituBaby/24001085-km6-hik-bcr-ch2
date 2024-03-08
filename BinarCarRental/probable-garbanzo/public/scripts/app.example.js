@@ -2,7 +2,7 @@ class App {
   constructor() {
     this.clearButton = document.getElementById("clear-btn");
     this.loadButton = document.getElementById("load-btn");
-    this.carContainerElement = document.getElementById("cars-container");
+    this.carContainerElement = document.getElementById("card-cars");
   }
 
   async init() {
@@ -16,7 +16,9 @@ class App {
   run = () => {
     Car.list.forEach((car) => {
       const node = document.createElement("div");
+      node.classList.add("col-md-4");
       node.innerHTML = car.render();
+      // const node = car.render();
       this.carContainerElement.appendChild(node);
     });
   };

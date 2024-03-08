@@ -41,12 +41,52 @@ class Car {
 
   render() {
     return `
-      <p>id: <b>${this.id}</b></p>
-      <p>plate: <b>${this.plate}</b></p>
-      <p>manufacture: <b>${this.manufacture}</b></p>
-      <p>model: <b>${this.model}</b></p>
-      <p>available at: <b>${this.availableAt}</b></p>
-      <img src="${this.image}" alt="${this.manufacture}" width="64px">
+      <div class="card mt-5">
+            <img src="${this.image}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <p>${this.manufacture} ${this.model}/${this.type}</p>
+              <h5 class="card-title">${this.rentPerDay.toLocaleString("id-ID", {
+                style: "currency",
+                currency: "IDR",
+              })}</h5>
+              <p class="card-text">Description : <br>${
+                this.description
+              } <br> <br> Specs: <br> ${this.specs} <br><br>Options: <br> ${
+      this.options
+    }</p>
+              <div class="detail">
+                <span>
+                  <img src="./images/fi_users.png" alt="" />
+                </span>
+                <p class="ms-2">${this.capacity} orang</p>
+              </div>
+              <div class="detail">
+                <span>
+                  <img src="./images/fi_settings.png" alt="" />
+                </span>
+                <p class="ms-2">${this.transmission}</p>
+              </div>
+              <div class="detail">
+                <span>
+                  <img src="./images/fi_calendar.png" alt="" />
+                </span>
+                <p class="ms-2">${this.year}</p>
+              </div>
+
+              <a href="#" class="btn btn-success">Go somewhere</a>
+            </div>
+          </div>
     `;
   }
+
+  // render() {
+  //   return `
+  //     <p>id: <b>${this.id}</b></p>
+  //     <p>plate: <b>${this.plate}</b></p>
+  //     <p>manufacture: <b>${this.manufacture}</b></p>
+  //     <p>model: <b>${this.model}</b></p>
+  //     <p>available at: <b>${this.availableAt}</b></p>
+  //     <img src="${this.image}" alt="${this.manufacture}" width="64px">
+  //   `;
+  // }
 }
