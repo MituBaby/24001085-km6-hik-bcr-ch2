@@ -64,7 +64,7 @@
     <div class="search">
       <form>
         <div class="row g-2 mx-auto">
-          <div class="col-3">
+          <div class="col-md-3">
             <p>Tipe Driver</p>
             <select class="form-select" id="validationDefault04" required>
               <option selected disabled value="">Pilih Tipe Driver</option>
@@ -72,7 +72,7 @@
               <option value="2">Tanpa Sopir</option>
             </select>
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <p>Tanggal</p>
             <!-- <input type="date" id="tanggal" required /> -->
             <input
@@ -85,20 +85,21 @@
               required
             />
           </div>
-          <div class="col-3">
+          <div class="col-md-3">
             <p>Waktu Jemput/Ambil</p>
             <div class="input-group mb-3">
-              <select class="form-select" id="inputGroupSelect01" required>
-                <option selected disabled value="">Pilih Waktu</option>
-                <option value="1">08.00 WIB</option>
-                <option value="2">09.00 WIB</option>
-                <option value="3">10.00 WIB</option>
-                <option value="4">11.00 WIB</option>
-                <option value="5">12.00 WIB</option>
-              </select>
+              <input
+                type="time"
+                class="form-control"
+                aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default"
+                placeholder="Jumlah Penumpang"
+                id="time"
+                required
+              />
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-md-2">
             <p>Jumlah Penumpang</p>
             <div class="input-group mb-3">
               <input
@@ -112,8 +113,10 @@
               />
             </div>
           </div>
-          <div class="col-1 mt-5">
-            <button class="btn btn-success" type="submit">Cari Mobil</button>
+          <div class="col-md-1 mt-5">
+            <button class="btn btn-success" type="submit" id="btn-submit">
+              Cari Mobil
+            </button>
           </div>
         </div>
       </form>
@@ -174,9 +177,11 @@
     </div>
     <!-- end footer section -->
 
-    <button id="load-btn">Load</button>
-    <button id="clear-btn">Clear</button>
-    <div id="cars-container"></div>
+    <div style="display: none">
+      <button id="load-btn">Load</button>
+      <button id="clear-btn">Clear</button>
+      <div id="cars-container"></div>
+    </div>
 
     <!-- Example Javascript -->
     <script type="text/javascript" src="./scripts/binar.js"></script>

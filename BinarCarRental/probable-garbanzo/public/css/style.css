@@ -283,7 +283,6 @@ q {
 }
 
 .search {
-  position: absolute;
   z-index: 10;
   width: 70%;
   top: 65%;
